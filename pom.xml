@@ -20,8 +20,23 @@
         </plugins>
     </build>
 
+    <properties>
+        <slf4j.version>1.7.21</slf4j.version>
+    </properties>
 
     <dependencies>
+        <!-- LOGGER -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
